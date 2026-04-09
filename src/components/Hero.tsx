@@ -1,6 +1,10 @@
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
+// @ts-ignore
+import myVideo from '../avatar.mp4';
+// @ts-ignore
+import myResume from '../resume.pdf';
 
 export default function Hero() {
   return (
@@ -28,8 +32,8 @@ export default function Hero() {
                   View Projects <ArrowRight className="w-4 h-4" />
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="gap-2 border-primary/50 hover:bg-primary/10" asChild>
-                <a href="/resume.pdf" target="_blank" rel="noreferrer">
+              <Button size="lg" variant="outline" className="gap-2 border-primary/50 hover:bg-primary/10" asChild>›
+                <a href={myResume} target="_blank" rel="noreferrer" download>
                   Download CV <Download className="w-4 h-4" />
                 </a>
               </Button>
@@ -48,7 +52,9 @@ export default function Hero() {
               loop 
               muted 
               playsInline
-              src="/avatar.mp4" 
+              // src="/avatar.mp4" 
+              // src={`${import.meta.env.BASE_URL}avatar.mp4`}
+              src={myVideo}
             />
             
             {/* Decorative gradient glow */}
