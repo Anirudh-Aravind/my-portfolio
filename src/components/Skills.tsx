@@ -13,7 +13,7 @@ const skillCategories = [
   },
   {
     title: "ETL & Orchestration",
-    skills: ["Pentaho", "dbt", "Airbyte", "n8n", "Workflow Scheduling", "Observability"]
+    skills: ["Pentaho", "Apache Hop", "dbt", "Airbyte", "n8n", "Workflow Scheduling", "Observability"]
   },
   {
     title: "Languages & Frameworks",

@@ -15,7 +15,7 @@ const experiences = [
       "Migrated data for 7 clients across 60+ locations from Version 1 to a FHIR-compliant Version 2 schema using Pentaho ETL and SQL.",
       "Transitioned reporting to AWS QuickSight with SPICE, offloading queries from the production DB and boosting report generation speed by up to 80%."
     ],
-    tags: ["Pentaho ETL", "AWS QuickSight", "SQL", "Python", "Data Migration", "FHIR"]
+    tags: ["Pentaho ETL", "Apache Hop", "AWS Redshift", "AWS Glue", "AWS S3", "AWS Lambda", "AWS RDS", "AWS QuickSight", "Apache Iceberg", "SQL", "Python", "Data Migration", "FHIR"]
   },
   {
     title: "Product Engineer – Backend & Data",

@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Github, ExternalLink, Database, Bot, Activity, ArrowRight } from "lucide-react";
+import { Github, ExternalLink, Database, Bot, Activity, ArrowRight, MessageSquareCode } from "lucide-react";
 
 const projects = [
   {
@@ -11,6 +11,14 @@ const projects = [
     icon: <Database className="w-6 h-6 text-primary" />,
     company: "Equipo Health Inc.",
     isCompanyProject: true
+  },
+  {
+    title: "Ask Your DB – Natural Language to SQL",
+    description: "An AI-powered SQL assistant that translates plain English queries into precise, formatted SQL by introspecting database schemas and foreign-key bridge tables. Runs queries locally, visualizes result sets, and retains schema corrections in persistent memory.",
+    tags: ["GenAI", "Text-to-SQL", "Python", "SQL Optimization", "Schema Introspection", "LLMs"],
+    icon: <MessageSquareCode className="w-6 h-6 text-primary" />,
+    github: "https://github.com/Anirudh-Aravind/Ask-Your-DB",
+    isCompanyProject: false
   },
   {
     title: "Intelligent Health Screening",
@@ -38,7 +46,7 @@ export default function Projects() {
           <h2 className="text-3xl font-bold tracking-tight">Featured Projects</h2>
           <p className="text-muted-foreground mt-2">A showcase of enterprise data solutions and open-source AI projects.</p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
